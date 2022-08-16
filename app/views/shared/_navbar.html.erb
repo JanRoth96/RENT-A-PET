@@ -1,29 +1,41 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid d-flex justify-content-between">
     <div class="navbar-brand ">
-      <%= link_to "/" do%>
-        <i class="fa-solid fa-dog nav-icon"></i>
-        <span class="nav-brand-text">RENTAPet</span>
-      <% end %>
+      <div class="brand-nav">
+        <%= link_to "/" do%>
+          <i class="fa-solid fa-dog nav-icon"></i>
+          <span class="nav-brand-text">RENTAPet</span>
+        <% end %>
+      </div>
     </div>
-    <div class="navbar-search nav-input">
+    <div class="navbar-search">
         <form class="d-flex ">
-          <input class="form-control me-2 rounded-pill " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-danger rounded-pill" type="submit">Search</button>
+          <div class="nav-search-container d-flex align-items-center">
+            <input class="form-control rounded-pill border-0"
+                   type="search" placeholder="Search" aria-label="Search">
+            <span class="" type="submit">
+              <i class="fa-solid fa-magnifying-glass pe-2 opacity-50"></i>
+            </span>
+          </div>
         </form>
       </div>
-    <ul class="navbar-nav">
+    <div class="nav-avatar-dropdown">
+      <ul class="navbar-nav">
         <li class="nav-item dropdown">
-          <a class="nav-link " href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://picsum.photos/100/100" alt="avatar" class="avatar-xlarge">
+          <a class="nav-link " href="#"
+             id="navbarDarkDropdownMenuLink" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://picsum.photos/100/100"
+                   alt="avatar" class="avatar-xlarge">
           </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+          <ul class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
       </ul>
-
+    </div>
   </div>
 </nav>
