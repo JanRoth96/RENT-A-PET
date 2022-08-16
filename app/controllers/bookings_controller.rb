@@ -1,6 +1,9 @@
 class BookingsController < ApplicationController
+  before_action :set_pet, except: [:index, :show]
+
   def index
-    @bookings = Booking.all
+    @bookings = policy_scope(Booking)
+
   end
 
   def show
@@ -8,11 +11,28 @@ class BookingsController < ApplicationController
     authorize @booking
   end
 
-  # def new
-  #   @booking = Booking.new
-  #   authorize @booking
-  # end
+  def new
+    @booking = Booking.new
+    authorize @booking
+  end
 
-  # def create
-  # end
+  def create
+    @booking = Booking.new(booking_params)
+    @booking.pet = @pet
+    if @booking.save
+      redirect_to bookings_path
+    else
+      render :new, status: :unprocessable_entity
+    end
+  end
+
+  private
+
+  def set_pet
+    @pet = Pet.find(params[:pet_id])
+  end
+
+  def booking_params
+    params.require(:pet).permit()
+  end
 end
