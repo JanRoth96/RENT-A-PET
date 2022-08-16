@@ -1,5 +1,15 @@
-<h1>Pets Overview</h1>
-<%= link_to "Add Pet", new_pet_path %>
-<% @pets.each do |pet| %>
-  <%= link_to pet.name, pet_path(pet) %>
-<% end %>
+<div class="container mt-3">
+  <h1>Pets Overview</h1>
+  <div class="new-pet-btn d-flex justify-content-center align-items-center m-3">
+    <%= link_to new_pet_path do%>
+      <span class=""><i class="fa-solid fa-plus"></i></span>
+    <%end %>
+  </div>
+  <section class="grid-section">
+    <% @pets.each do |pet| %>
+      <div class="grid-section-item">
+        <%=render "shared/card", pet: pet%>
+      </div>
+    <% end %>
+  </section>
+</div>
