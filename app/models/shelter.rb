@@ -4,5 +4,5 @@ class Shelter < ApplicationRecord
   has_many :bookings, through: :pets
 
   validates :name, presence: true
-  valudates :location, presence: true
+  validates :location, presence: true
 end
