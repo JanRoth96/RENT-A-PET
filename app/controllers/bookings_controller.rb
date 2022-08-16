@@ -14,11 +14,5 @@ class BookingsController < ApplicationController
   # end
 
   # def create
-  #   @pet = Pet.new(pet_params)
-  #   if @pet.save
-  #     redirect_to pet_path(@pet)
-  #   else
-  #     render :new, status: :unprocessable_entity
-  #   end
   # end
 end
