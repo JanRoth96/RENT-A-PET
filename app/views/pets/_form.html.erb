@@ -1,0 +1,10 @@
+<%= simple_form_for @pet do |f| %>
+  <%= f.input :name %>
+  <%= f.input :gender %>
+  <%= f.input :species %>
+  <%= f.input :age %>
+  <%= f.input :description %>
+  <%= f.input :price %>
+  <%# <%= f.input :photo, as: :file %>
+  <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
+<% end %>
