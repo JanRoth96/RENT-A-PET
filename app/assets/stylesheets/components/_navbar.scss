@@ -1,12 +1,29 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+a{
+  text-decoration: none;
+  color: #60463B;
+}
+a:hover{
+    color: #60463B;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.nav-icon{
+  font-size: 3em;
+  color: #60463B;
+}
+.nav-brand-text{
+  font-size: 32px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-search{
+  width: 50%;
 }
+.nav-search-container{
+  width: 70%;
+  background: #F4F4F4;
+  border-radius: 50px;
+  border: 1px solid rgba(0,0,0,0.3);
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
