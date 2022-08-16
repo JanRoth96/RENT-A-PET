@@ -1,0 +1,16 @@
+.pet-card{
+  background-color: #fff;
+  border: none;
+  margin: 0 16px 0 16px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+}
+.pet-card a{
+  text-decoration: none;
+  color: rgba(0,0,0,0.8);
+}
+
+.pet-card-image{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
