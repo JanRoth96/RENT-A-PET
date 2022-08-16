@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :pets, except: [:edit, :update] do
-    resources :bookings, only: [:new, :create, :index]
+    resources :bookings, only: [:new, :create]
   end
 
-  resources :bookings, only: [:index, :destroy, :edit, :update]
+  resources :bookings, only: [:index, :show, :destroy, :edit, :update]
 
   resources :shelters do
     resources :pets, only: [:index]
