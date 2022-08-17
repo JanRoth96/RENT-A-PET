@@ -1,5 +1,5 @@
 $height:400px;
-
+$px:80px;
 .photos{
   height: $height;
   border-radius: 16px;
@@ -27,15 +27,14 @@ $height:400px;
 }
 
 .book-block{
-  padding: 16px;
+  padding-right: $px;
+  padding-left: $px;
+  width: 560px;
   border-radius: 16px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
-.price  {
-  font-weight: bold;
-}
-.button{
-  border-radius: 8px;
+.booking-form{
+  padding-bottom: 3em;
 }
 
 .pet-info ul{
