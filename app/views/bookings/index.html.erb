@@ -1,4 +1,10 @@
-<h1>Bookings Overview</h1>
-<% @bookings.each do |booking| %>
-  <p><%= link_to booking.pet.name, booking_path(booking) %></p>
-<% end %>
+<div class="container mt-3">
+  <h1>Your Bookings</h1>
+  <section class="grid-section mb-5">
+    <% @bookings.each do |booking| %>
+      <div class="grid-section-item">
+        <%=render "shared/booking_card", booking: booking%>
+      </div>
+    <% end %>
+  </section>
+</div>

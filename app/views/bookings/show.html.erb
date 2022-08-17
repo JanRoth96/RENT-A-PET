@@ -8,4 +8,6 @@
       <%= link_to booking_path(@pet), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'card-action card-edit' do %>
         <i class="fas fa-times"></i>
       <% end %>
-    </div
+    </div>
+<p><%= @booking.start_date %></p>
+<p><%= @booking.end_date %></p>

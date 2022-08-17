@@ -1,0 +1,11 @@
+<div class="card pet-card" style="width: 20rem;">
+  <%= link_to booking_path(booking), class:"pet-card-btn" do%>
+  <img class="card-img-top pet-card-image" src="https://picsum.photos/300/200" alt="Card image cap">
+  <div class="card-body px-3">
+    <h3 class="card-title"><%= booking.pet.name %></h3>
+    <p class="card-text">From: <%= booking.start_date %></p>
+    <p class="card-text">To: <%= booking.end_date %></p>
+    <div class="card-text">Total: $<%= (booking.end_date-booking.start_date).to_i * booking.pet.price %> (<%= (booking.end_date-booking.start_date).to_i %> days total)</div>
+  </div>
+  <%end %>
+</div>
