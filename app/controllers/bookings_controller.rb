@@ -26,12 +26,12 @@ class BookingsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
 
-    def destroy
+  def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
     redirect_to pet_path(@bookibg.pet), status: :see_other
-    end
   end
 
   private
