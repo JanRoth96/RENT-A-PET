@@ -1,10 +1,13 @@
 <div class="container mt-3">
   <h1>Pets Overview</h1>
-  <div class="new-pet-btn d-flex justify-content-center align-items-center m-3">
-    <%= link_to new_pet_path do%>
-      <span class=""><i class="fa-solid fa-plus"></i></span>
-    <%end %>
-  </div>
+
+<!--  Uncomment to release the new pet button-->
+<!--  <div class="new-pet-btn d-flex justify-content-center align-items-center m-3">-->
+    <%#= link_to new_pet_path do%>
+<!--      <span class=""><i class="fa-solid fa-plus"></i></span>-->
+    <%#end %>
+<!--  </div>-->
+
   <section class="grid-section mb-5">
     <% @pets.each do |pet| %>
       <div class="grid-section-item">
