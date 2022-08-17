@@ -31,21 +31,21 @@ shelter_2 = Shelter.new(name: "Sad Whales", location: "Sahara", user: user_2)
 shelter_2.save!
 shelter_3 = Shelter.new(name: "Cool Cat", location: "Osaka", user: user_3)
 shelter_3.save!
-shelter_4 = Shelter.new(name: "Small Dog", location: "Kanagawa", user: user_4)
+shelter_4 = Shelter.new(name: "Small Dogs", location: "Kanagawa", user: user_4)
 shelter_4.save!
-shelter_5 = Shelter.new(name: "Handsome Horse", location: "Yokohama", user: user_5)
+shelter_5 = Shelter.new(name: "Handsome Horses", location: "Yokohama", user: user_5)
 shelter_5.save!
 
 
-pet_1 = Pet.new(name: "Günther", species: "Turtle", gender: "undefined", age: 220, availability: "available", price: 9.99, shelter: shelter_1, description: "bigpig")
+pet_1 = Pet.new(name: "Günther", species: "Turtle", gender: "undefined", age: 220, availability: "available", price: 9, shelter: shelter_1, description: "Although Günther is part of the Happy Turtles Shelter he is a sad turtle because his friends are all younger than him. To make Günther happy, take him out on a date. He loves Whisky!")
 pet_1.save!
-pet_2 = Pet.new(name: "Hermann", species: "Whale", gender: "male", age: 12, availability: "not-available", price: 10.99, shelter: shelter_2, description: "bigpig")
+pet_2 = Pet.new(name: "Hermann", species: "Whale", gender: "male", age: 12, availability: "not-available", price: 10, shelter: shelter_2, description: "Hermann, although being a big boy, is still a little child at heart. He loves being taken to the arcade where his favorite game is Mario Cart. He also loves going on fancy dinners (loves sushi) but hates the beach.")
 pet_2.save!
-pet_3 = Pet.new(name: "Shadow", species: "Cat", gender: "female", age: 2, availability: "not-available", price: 11.99, shelter: shelter_3, description: "bigpig")
+pet_3 = Pet.new(name: "Shadow", species: "Cat", gender: "female", age: 18, availability: "not-available", price: 11, shelter: shelter_3, description: "Shadow was the cat that inspired Jiji in the movie Kikis Delivery Service by Studio Ghibli. Being retired for 8 years already, she now loves hunting frogs and going to theme parks")
 pet_3.save!
-pet_4 = Pet.new(name: "Spike", species: "Dog", gender: "male", age: 5, availability: "available", price: 50.99, shelter: shelter_4, description: "bigpig")
+pet_4 = Pet.new(name: "Spike", species: "Dog", gender: "male", age: 5, availability: "available", price: 50, shelter: shelter_4, description: "Spike once worked for the MI6 and also was a double agent for some years. He loves sunsets but hates the sunrise. If you rent him for a couple of days make sure to play some poker with him as it is his favorite game.")
 pet_4.save!
-pet_5 = Pet.new(name: "Noir", species: "Horse", gender: "male", age: 1, availability: "available", price: 100.99, shelter: shelter_5, description: "bigpig")
+pet_5 = Pet.new(name: "Noir", species: "Horse", gender: "male", age: 1, availability: "available", price: 100, shelter: shelter_5, description: "Noir actually once was a Unicorn but had to sell his horn because he got into business with the wrong guys.")
 pet_5.save!
 
 
