@@ -6,7 +6,7 @@
         <%= link_to "/", class:"brand-link" do%>
           <!-- Place for logo image/icon-->
           <i class="fa-solid fa-dog nav-icon"></i>
-          <span class="nav-brand-text">RENTAPet</span>
+          <span class="nav-brand-text">RENT-A-PET</span>
         <% end %>
       </div>
     </div>
@@ -39,6 +39,14 @@
           <ul class="dropdown-menu dropdown-menu-end"
               aria-labelledby="navbarDarkDropdownMenuLink">
 <!--            List of actions in Dropdown-->
+             <% if current_user%>
+                <li>
+                    <span class=dropdown-item"><%= current_user.user_name %></span>
+                </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+            <%end %>
             <li>
               <%=link_to "/", class:"dropdown-item" do%>
                 <span>Home</span>
