@@ -10,8 +10,12 @@
 }
 
 .pet-card-image{
+  min-height: 240px;
+  max-height: 240px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .card-trip {
