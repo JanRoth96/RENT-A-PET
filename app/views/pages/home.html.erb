@@ -1,9 +1,9 @@
 <div class="container-fluid m-0 p-0">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/?pet);">
     <div class="container">
       <h1>Rent a Pet!</h1>
-      <p>Change your life and rent a pet</p>
-      <a class="btn btn-primary" href="#">Browse Pets</a>
+      <p>Change your life! Rent a pet</p>
+      <%= link_to "Browse Pets", pets_path, class: "btn btn-primary" %>
     </div>
   </div>
 </div>
@@ -12,40 +12,34 @@
     <p>want a pet but unsure about owning one? Try rent a pet! Browse through our selection of pets and choose the right one for you!</p>
   </div>
 </div>
-
 <div class="container mt-3 mb-3">
-
-<div class="cards">
-  <div class="card-trip">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-    <div class="card-trip-infos">
-      <div>
-        <h2>Milo</h2>
-        <p>Cute and friendly! Loves to play</p>
+  <div class="cards">
+    <div class="card-trip">
+      <img src="https://source.unsplash.com/random/?dog" />
+      <div class="card-trip-infos">
+        <div>
+          <h2>Milo</h2>
+          <p>Cute and friendly! Loves to play</p>
+        </div>
       </div>
-
+    </div>
+    <div class="card-trip">
+      <img src="https://source.unsplash.com/random/?cat" />
+      <div class="card-trip-infos">
+        <div>
+          <h2>Mr Grinch</h2>
+          <p>Grumpy cat. Quite mean. Always moody</p>
+        </div>
+      </div>
+    </div>
+    <div class="card-trip">
+      <img src="https://source.unsplash.com/random/?whale" />
+      <div class="card-trip-infos">
+        <div>
+          <h2>Willy</h2>
+          <p>Friendly whale. Huge pool needed</p>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card-trip">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-    <div class="card-trip-infos">
-      <div>
-        <h2>Mr Grinch</h2>
-        <p>Grumpy cat. Quite mean. Always moody</p>
-      </div>
-
-    </div>
-  </div>
-  <div class="card-trip">
-    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-    <div class="card-trip-infos">
-      <div>
-        <h2>Willy</h2>
-        <p>Friendly whale. Huge pool needed</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
 </div>
