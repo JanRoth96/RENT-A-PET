@@ -8,7 +8,7 @@
   <section class="grid-section mb-5">
     <% @pets.each do |pet| %>
       <div class="grid-section-item">
-        <%=render "shared/card", pet: pet%>
+        <%=render "shared/pet_card", pet: pet%>
       </div>
     <% end %>
   </section>

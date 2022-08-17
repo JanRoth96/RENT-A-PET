@@ -1,0 +1,56 @@
+$height:400px;
+
+.photos{
+  height: $height;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  gap: 8px;
+}
+.main-photo img{
+  height: $height;
+  width: 100%;
+  object-fit: cover;
+}
+.sub-photos{
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  grid-template-rows: $height/2 $height/2;
+  gap: 8px;
+}
+.sub-photos img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.book-block{
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.price  {
+  font-weight: bold;
+}
+.button{
+  border-radius: 8px;
+}
+
+.pet-info ul{
+  list-style-type: none;
+  font-weight: bold;
+}
+.pet-info li{
+  padding: 8px;
+  background-color: lightgray;
+  border-radius: 4px;
+}
+
+.pet-description{
+  font-size: 1.2em;
+  max-width: 360px;
+  word-wrap: break-word
+
+}
