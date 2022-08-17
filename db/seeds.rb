@@ -37,15 +37,15 @@ shelter_5 = Shelter.new(name: "Handsome Horse", location: "Yokohama", user: user
 shelter_5.save!
 
 
-pet_1 = Pet.new(name: "Günther", species: "Turtle", gender: "undefined", age: 220, availability: "available", price: 9.99, shelter: shelter_1, description: "bigpig")
+pet_1 = Pet.new(name: "Günther", species: "Turtle", gender: "undefined", age: 220, availability: "available", price: 9, shelter: shelter_1, description: "bigpig")
 pet_1.save!
-pet_2 = Pet.new(name: "Hermann", species: "Whale", gender: "male", age: 12, availability: "not-available", price: 10.99, shelter: shelter_2, description: "bigpig")
+pet_2 = Pet.new(name: "Hermann", species: "Whale", gender: "male", age: 12, availability: "not-available", price: 10, shelter: shelter_2, description: "bigpig")
 pet_2.save!
-pet_3 = Pet.new(name: "Shadow", species: "Cat", gender: "female", age: 2, availability: "not-available", price: 11.99, shelter: shelter_3, description: "bigpig")
+pet_3 = Pet.new(name: "Shadow", species: "Cat", gender: "female", age: 2, availability: "not-available", price: 11, shelter: shelter_3, description: "bigpig")
 pet_3.save!
-pet_4 = Pet.new(name: "Spike", species: "Dog", gender: "male", age: 5, availability: "available", price: 50.99, shelter: shelter_4, description: "bigpig")
+pet_4 = Pet.new(name: "Spike", species: "Dog", gender: "male", age: 5, availability: "available", price: 50, shelter: shelter_4, description: "bigpig")
 pet_4.save!
-pet_5 = Pet.new(name: "Noir", species: "Horse", gender: "male", age: 1, availability: "available", price: 100.99, shelter: shelter_5, description: "bigpig")
+pet_5 = Pet.new(name: "Noir", species: "Horse", gender: "male", age: 1, availability: "available", price: 100, shelter: shelter_5, description: "bigpig")
 pet_5.save!
 
 
