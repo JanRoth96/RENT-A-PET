@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
-  before_action :set_pet, except: [:index, :show]
+  before_action :set_pet, except: [:index, :show, :destroy]
+  skip_after_action :verify_authorized, only: [:destroy]
 
   def index
     @bookings = policy_scope(Booking)
@@ -31,7 +32,7 @@ class BookingsController < ApplicationController
   def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
-    redirect_to pet_path(@bookibg.pet), status: :see_other
+    redirect_to bookings_path, status: :see_other
   end
 
   private

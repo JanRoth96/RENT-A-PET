@@ -1,13 +1,10 @@
 <h1>Show page Booking</h1>
 <p><%= @booking.pet.name %></p>
-
-  <div class="d-flex">
-      <%= link_to booking_pet_path(@pet), class: 'btn-light', class: 'card-action card-destroy' do %>
-        <i class="fas fa-pencil-alt"></i>
-      <% end %>
-      <%= link_to booking_path(@pet), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'card-action card-edit' do %>
-        <i class="fas fa-times"></i>
-      <% end %>
-    </div>
 <p><%= @booking.start_date %></p>
 <p><%= @booking.end_date %></p>
+
+<div class="d-flex">
+  <%= link_to booking_path(@booking), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: 'card-action card-edit' do %>
+    <i class="fas fa-times"></i>
+  <% end %>
+  </div>
