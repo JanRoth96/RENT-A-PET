@@ -6,6 +6,8 @@ class PetsController < ApplicationController
   def show
     @pet = Pet.find(params[:id])
     authorize @pet
+    @booking = Booking.new
+    authorize @booking
   end
 
   def new

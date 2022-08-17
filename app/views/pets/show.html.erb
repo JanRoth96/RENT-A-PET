@@ -30,15 +30,11 @@
       </div>
     </div>
 
-    <div class="book-block">
-      <div class="price mb-3">
-        <h3><%="#{@pet.price} $ per day"%></h3>
+    <div class="book-block py-5">
+      <h2 class="d-flex justify-content-center">Booking</h2>
+      <div class="booking-form">
+        <%=render "bookings/form" %>
       </div>
-
-      <h3 class="d-flex justify-content-center ">
-        <%= link_to "Book", new_pet_booking_path(@pet),
-                           class:"btn btn-primary button flex-grow-1" %>
-      </h3>
     </div>
   </div>
 </div>
