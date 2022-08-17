@@ -1,6 +1,6 @@
 <div class="card pet-card" style="width: 20rem;">
   <%= link_to pet_path(pet), class:"pet-card-btn" do%>
-  <img class="card-img-top pet-card-image" src="https://picsum.photos/300/200" alt="Card image cap">
+  <img class="card-img-top pet-card-image" src="https://source.unsplash.com/featured/?<%=pet.species%>}&#{rand(10000)}" alt="Card image cap">
   <div class="card-body px-3">
     <h3 class="card-title"><%= pet.name %> (<%= pet.species %>)</h3>
     <p class="card-text">Location: <%= pet.shelter.location %></p>
