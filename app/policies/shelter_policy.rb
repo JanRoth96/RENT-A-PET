@@ -6,7 +6,7 @@ class ShelterPolicy < ApplicationPolicy
     # end
   end
 
-  def show?
+  def shelter?
     true
   end
 end

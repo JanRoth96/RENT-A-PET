@@ -28,8 +28,13 @@ class BookingsController < ApplicationController
     end
   end
 
-  def approve
-
+  def update
+    @booking = Booking.find(params[:id])
+    if @booking.update(booking_params)
+      raise
+    else
+      # render # where was the booking update form?
+    end
   end
 
   private

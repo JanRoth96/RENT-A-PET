@@ -8,9 +8,8 @@ Rails.application.routes.draw do
 
   resources :bookings, only: [:index, :show, :destroy, :edit, :update]
 
-  resources :shelters do
-    resources :pets, only: [:index]
-  end
+  get "/shelter", to: "shelters#shelter", as: :shelter
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
