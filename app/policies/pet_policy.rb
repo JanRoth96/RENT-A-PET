@@ -24,4 +24,8 @@ class PetPolicy < ApplicationPolicy
   def create?
     true
   end
+
+  def destroy?
+    user.shelter == record.shelter
+  end
 end
