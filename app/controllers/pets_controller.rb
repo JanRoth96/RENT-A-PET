@@ -1,4 +1,6 @@
 class PetsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
+
   def index
     if params[:query].present?
       @pets = policy_scope(Pet).where("species ILIKE ?", "%#{params[:query]}%")

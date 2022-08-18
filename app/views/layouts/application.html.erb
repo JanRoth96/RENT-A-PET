@@ -12,7 +12,7 @@
   </head>
 
   <body class="main">
-    <%= render "shared/navbar" %>
+    <%= render "shared/navbar" if current_user %>
     <div class="content-vh">
     <%=yield%>
     </div>
