@@ -7,6 +7,6 @@ class ShelterPolicy < ApplicationPolicy
   end
 
   def shelter?
-    true
+    user.shelter
   end
 end

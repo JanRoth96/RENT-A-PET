@@ -17,4 +17,8 @@ class BookingPolicy < ApplicationPolicy
   def create?
     true
   end
+
+  def update?
+    user.shelter == record.pet.shelter
+  end
 end

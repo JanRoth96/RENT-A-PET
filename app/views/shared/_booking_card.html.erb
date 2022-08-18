@@ -12,8 +12,18 @@
 
     <% if booking.status == "pending" %>
       <div class="booking-card-form d-flex justify-content-between">
-        <button class="booking-card-btn accept">Approve</button>
-        <button class="booking-card-btn reject">Reject</button>
+        <% if booking.pending? %>
+          <%= simple_form_for booking do |f| %>
+            <%= f.input :status, as: :hidden, input_html: { value: 'accepted'} %>
+            <%= f.submit 'Accept', class: 'btn btn-info' %>
+          <% end %>
+          <%= simple_form_for booking do |f| %>
+            <%= f.input :status, as: :hidden, input_html: { value: 'rejected'} %>
+            <%= f.submit 'Reject', class: 'btn btn-light' %>
+          <% end %>
+        <% else %>
+          <p><%= booking.status %></p>
+        <% end %>
       </div>
     <% end %>
 
