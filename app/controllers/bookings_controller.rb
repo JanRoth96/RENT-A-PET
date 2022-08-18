@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_pet, except: [:index, :show]
+  before_action :set_pet, except: [:index, :show, :update]
 
   def index
     @bookings = policy_scope(Booking)
@@ -30,10 +30,13 @@ class BookingsController < ApplicationController
 
   def update
     @booking = Booking.find(params[:id])
+    authorize @booking
     if @booking.update(booking_params)
-      raise
+      redirect_to shelter_path
     else
       # render # where was the booking update form?
+      @shelter = current_user.shelter
+      render "shelters/shelter"
     end
   end
 
