@@ -8,7 +8,6 @@
   text-decoration: none;
   color: rgba(0,0,0,0.8);
 }
-
 .pet-card-image{
   min-height: 240px;
   max-height: 240px;
@@ -20,14 +19,12 @@
 
 .booking-card{
 margin-bottom: 16px;
-  max-width: 260px;
 }
 .booking-card-form{
   padding-top: 16px;
 }
-
 .booking-card-btn{
-  min-width: 96px;
+  min-width: 128px;
   padding: 8px;
   border-radius: 8px;
   color: white;
@@ -35,13 +32,22 @@ margin-bottom: 16px;
 }
 .accept{
   background-color: #0D6EFD;
-
 }
 .reject{
   color: #0D6EFD;
   background-color: white;
   border: 1px solid #0D6EFD;
 }
+.reservation-card{
+  max-width: 300px;
+  padding-bottom: 16px;
+}
+
+.card-thinner{
+  max-width: 260px;
+}
+
+
 
 .card-trip {
   overflow: hidden;

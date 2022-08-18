@@ -1,7 +1,7 @@
-<div class="card booking-card pet-card" style="width: 20rem;">
+<div class="booking-card pet-card reservation-card" style="width: 20rem;">
   <img class="card-img-top pet-card-image" src="https://source.unsplash.com/featured/?<%=booking.pet.species%>}&#{rand(10000)}" alt="Card image cap">
   <div class="card-body px-3">
-    <h3 class="card-title"><%= booking.pet.name %></h3>
+    <h3 class="card-title my-3"><%= booking.pet.name %></h3>
     <p class="card-text">Status: <%= booking.status %></p>
     <p class="card-text">From: <%= booking.start_date.strftime("%d/%m/%y") %></p>
     <p class="card-text">To: <%= booking.end_date.strftime( "%d/%m/%y") %></p>
