@@ -1,5 +1,5 @@
 class SheltersController < ApplicationController
-  def show
+  def shelter
     @shelter = current_user.shelter
     authorize @shelter
   end
