@@ -1,0 +1,16 @@
+<h1>My Pets</h1>
+<% @shelter.pets.each do |pet| %>
+  <p><%= pet.name %></p>
+<% end %>
+
+<h1>My Booking Requests</h1>
+<% @shelter.bookings.each do |booking| %>
+  <p><%= booking.pet.name %></p>
+  <p><%= booking.start_date %></p>
+  <p><%= booking.end_date %></p>
+  <% if booking.status == "pending" %>
+    <p>Approve or Reject?</p>
+  <% end %>
+<% end %>
+
+<p><%= link_to "Add Pet", new_pet_path %></p>

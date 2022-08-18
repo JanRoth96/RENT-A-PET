@@ -3,7 +3,6 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = policy_scope(Booking)
-
   end
 
   def show
@@ -20,12 +19,17 @@ class BookingsController < ApplicationController
     @booking = Booking.new(booking_params)
     @booking.pet = @pet
     @booking.user = current_user
+    @booking.status = "pending"
     authorize @booking
     if @booking.save
       redirect_to bookings_path
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def approve
+
   end
 
   private

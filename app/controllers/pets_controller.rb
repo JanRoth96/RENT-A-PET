@@ -17,6 +17,7 @@ class PetsController < ApplicationController
 
   def create
     @pet = Pet.new(pet_params)
+    @pet.shelter = current_user.shelter
     authorize @pet
     if @pet.save
       redirect_to pet_path(@pet)
