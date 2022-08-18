@@ -32,6 +32,12 @@ class PetsController < ApplicationController
     end
   end
 
+  def destroy
+    @pet = Pet.find(params[:id])
+    @pet.destroy
+    redirect_to shelter_path(@pet)
+  end
+
   private
 
   def pet_params
