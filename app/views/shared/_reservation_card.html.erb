@@ -9,5 +9,24 @@
       <%= (booking.end_date-booking.start_date).to_i * booking.pet.price %>
       (<%= (booking.end_date-booking.start_date).to_i %> days total)
     </div>
+
+    <% if booking.status == "pending" %>
+      <div class="booking-card-form d-flex justify-content-between">
+        <% if booking.pending? %>
+          <%= simple_form_for booking do |f| %>
+            <%= f.input :status, as: :hidden, input_html: { value: 'accepted'} %>
+            <%= f.submit 'Accept', class: 'booking-card-btn accept' %>
+          <% end %>
+          <%= simple_form_for booking do |f| %>
+            <%= f.input :status, as: :hidden, input_html: { value: 'rejected'} %>
+            <%= f.submit 'Reject', class: 'booking-card-btn reject' %>
+          <% end %>
+        <% else %>
+          <p><%= booking.status %></p>
+        <% end %>
+      </div>
+    <% end %>
+
   </div>
+  <%#end %>
 </div>
