@@ -32,7 +32,7 @@
               <%=render "shared/booking_card", booking: booking%>
             <% end %>
             <p>Rejected</p>
-            <% @shelter.bookings.where(status: "declined").each do |booking|%>
+            <% @shelter.bookings.where(status: "rejected").each do |booking|%>
               <%=render "shared/booking_card", booking: booking%>
             <% end %>
           </div>
