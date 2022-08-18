@@ -58,6 +58,13 @@
                 <span>Bookings</span>
               <%end %>
             </li>
+            <% if policy(Shelter).shelter? %>
+            <li>
+              <%=link_to "/shelter", class:"dropdown-item" do%>
+                <span>Dashboard</span>
+              <%end %>
+            </li>
+            <% end %>
             <li>
             <div class="dropdown-divider"></div>
             </li>

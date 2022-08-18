@@ -1,10 +1,18 @@
-<%= simple_form_for @pet do |f| %>
-  <%= f.input :name %>
-  <%= f.input :gender %>
-  <%= f.input :species %>
-  <%= f.input :age %>
-  <%= f.input :description %>
-  <%= f.input :price %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
-<% end %>
+<div class="container d-flex justify-content-center">
+  <div class="auth-form auth-form-wide">
+    <h2 class="auth-head">New pet</h2>
+    <%= simple_form_for @pet do |f| %>
+      <%= f.input :name %>
+      <%= f.input :gender %>
+      <%= f.input :species %>
+      <%= f.input :age %>
+      <%= f.input :description %>
+      <%= f.input :price %>
+      <%# <%= f.input :photo, as: :file %>
+      <div class="form-actions auth-btn-container">
+        <%= f.button :submit, 'Submit', class: "auth-btn" %>
+      </div>
+    <% end %>
+    <%= link_to "Back", shelter_path %>
+  </div>
+</div>
