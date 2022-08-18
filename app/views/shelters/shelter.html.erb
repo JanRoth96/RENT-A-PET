@@ -1,44 +1,45 @@
 <div class="container shelter-container mt-3 ">
   <div class="row">
-    <div class="col-9">
-      <div class="pets-container">
-        <div class="my-pets-head d-flex">
-          <h1>My Pets</h1>
-          <%= link_to new_pet_path, class:"new-pet-btn" do%>
-            <i class="fa-solid fa-circle-plus"></i>
-          <%end %>
+    <div class="col-9 reservation-bg">
+      <h1 class="mb-4 fw-bold">Booking Requests</h1>
+        <h3 class="my-3"> <span class="sub-head"><i class="fa-solid fa-chevron-right"></i> Pending</span></h3>
+        <div class="reservation-pending bookings-grid">
+          <% @shelter.bookings.where(status: "pending").each do |booking|%>
+            <%=render "shared/reservation_card", booking: booking%>
+          <% end %>
         </div>
-          <section class="grid-bookings-section mb-5">
+        <h3 class="my-3"><span class="sub-head"><i class="fa-solid fa-chevron-right"></i> Accepted</span></h3>
+        <div class="reservation-accepted bookings-grid">
+        <% @shelter.bookings.where(status: "accepted").each do |booking|%>
+         <%=render "shared/reservation_card", booking: booking%>
+        <% end %>
+        </div>
+        <h3 class="my-3"><span class="sub-head"><i class="fa-solid fa-chevron-right"></i> Rejected</span></h3>
+        <div class="reservation-rejected bookings-grid">
+        <% @shelter.bookings.where(status: "rejected").each do |booking|%>
+          <%=render "shared/reservation_card", booking: booking%>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-3">
+      <div class="pets-container pets-column">
+        <div class="my-pets-head mb-5 d-flex align-items-center mt-3">
+          <h1 class="me-2 mb-0 fw-bold">My Pets</h1>
+            <%= link_to new_pet_path, class:"new-pet-btn" do%>
+              <i class="fa-solid fa-circle-plus"></i>
+            <%end %>
+        </div>
+          <section class="grid-pets-section mb-5">
           <% @shelter.pets.each do |pet| %>
             <div class="grid-bookings-section-item">
-              <%=render "shared/pet_card", pet: pet, delete: true%>
+              <%=render "shared/pet_card_thinner", pet: pet%>
             </div>
           <% end %>
         </section>
       </div>
     </div>
 
-    <div class="col-3">
-      <h2 class="d-flex justify-content-center mb-3">Booking Requests</h2>
-      <div class="bookings-container bookings-column">
-        <div class="scrollbar d-flex justify-content-center">
-          <div class="bookings-items">
-            <p>Pending</p>
-            <% @shelter.bookings.where(status: "pending").each do |booking|%>
-              <%=render "shared/reservation_card", booking: booking%>
-            <% end %>
-            <p>Accepted</p>
-            <% @shelter.bookings.where(status: "accepted").each do |booking|%>
-              <%=render "shared/reservation_card", booking: booking%>
-            <% end %>
-            <p>Rejected</p>
-            <% @shelter.bookings.where(status: "declined").each do |booking|%>
-              <%=render "shared/reservation_card", booking: booking%>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
 
