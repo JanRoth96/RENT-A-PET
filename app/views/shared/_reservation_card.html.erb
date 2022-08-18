@@ -15,11 +15,11 @@
         <% if booking.pending? %>
           <%= simple_form_for booking do |f| %>
             <%= f.input :status, as: :hidden, input_html: { value: 'accepted'} %>
-            <%= f.submit 'Accept', class: 'btn btn-info' %>
+            <%= f.submit 'Accept', class: 'booking-card-btn accept' %>
           <% end %>
           <%= simple_form_for booking do |f| %>
             <%= f.input :status, as: :hidden, input_html: { value: 'rejected'} %>
-            <%= f.submit 'Reject', class: 'btn btn-light' %>
+            <%= f.submit 'Reject', class: 'booking-card-btn reject' %>
           <% end %>
         <% else %>
           <p><%= booking.status %></p>

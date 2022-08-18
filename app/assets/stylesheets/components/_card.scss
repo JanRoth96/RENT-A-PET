@@ -27,17 +27,20 @@ margin-bottom: 16px;
 }
 
 .booking-card-btn{
-  min-width: 80px;
+  min-width: 96px;
   padding: 8px;
   border-radius: 8px;
   color: white;
+  border: none;
 }
 .accept{
-  background-color: #1EDD88;
+  background-color: #0D6EFD;
 
 }
 .reject{
-  background-color: #DC3545;
+  color: #0D6EFD;
+  background-color: white;
+  border: 1px solid #0D6EFD;
 }
 
 .card-trip {
