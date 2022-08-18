@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :set_pet, except: [:index, :show, :update]
+  before_action :set_pet, except: [:index, :show, :update, :destroy]
 
   def index
     @bookings = policy_scope(Booking)
@@ -38,6 +38,13 @@ class BookingsController < ApplicationController
       @shelter = current_user.shelter
       render "shelters/shelter"
     end
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    authorize @booking
+    @booking.destroy
+    redirect_to bookings_path
   end
 
   private

@@ -8,5 +8,6 @@
     <div class="card-text">Total: $<%= (booking.end_date-booking.start_date).to_i * booking.pet.price %>0
       (<%= (booking.end_date-booking.start_date).to_i %> days total)
     </div>
+    <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
   </div>
 </div>
