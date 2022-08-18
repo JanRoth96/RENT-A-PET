@@ -21,4 +21,8 @@ class BookingPolicy < ApplicationPolicy
   def update?
     user.shelter == record.pet.shelter
   end
+
+  def destroy?
+    user == record.user || user == record.pet.shelter.user
+  end
 end
