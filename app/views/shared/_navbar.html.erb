@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid d-flex justify-content-between">
+  <div class="container-fluid d-flex justify-content-between container-gap">
 <!--    Logo -->
     <div class="navbar-brand ">
       <div class="brand-nav">
@@ -11,14 +11,20 @@
       </div>
     </div>
 <!--    Search bar -->
-<%= form_tag pets_path, method: :get, class: "d-flex" do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a pet"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
+    <div class="navbar-search-container">
+        <%= form_tag pets_path, method: :get, class: "" do %>
+        <div class="search-wrap">
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control navbar-search",
+              placeholder: "Find a pet"
+            %>
+            <button class="navbar-search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+      <% end %>
+    </div>
 <!--    avatar and dropdown -->
   <% if current_user %>
     <div class="nav-avatar-dropdown">
