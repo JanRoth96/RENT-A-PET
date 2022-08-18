@@ -13,6 +13,7 @@ $px:80px;
   height: $height;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 .sub-photos{
   display: grid;
