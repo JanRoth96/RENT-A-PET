@@ -1,10 +1,17 @@
-<%= simple_form_for [@pet, @booking] do |f| %>
-    <%= f.input :start_date, as: :date, html5: true, class: "start-date" %>
-    <%= f.input :end_date, as: :date, html5: true, class: "end-date" %>
-    <div class="price-tag">
+<div data-controller="booking_form">
+    <%= simple_form_for [@pet, @booking] do |f| %>
 
-    </div>
-    <div class="submit-form d-flex justify-content-center ">
-    <%= f.submit 'Submit', class: 'form-button btn btn-primary flex-grow-1 mt-3' %>
-    </div>
-  <% end %>
+        <%= f.input :start_date, as: :date,
+                    html5: true, class: "start-date",
+                    input_html:{data:{booking_form_target: "start_date"}}%>
+        <%= f.input :end_date, as: :date,
+                    html5: true, class: "end-date",
+                    input_html:{data:{booking_form_target: "end_date"}} %>
+        <div class="price-tag" data-action="click->booking-form#connect">
+          <span class="booking-form-price">Price:</span>
+        </div>
+        <div class="submit-form d-flex justify-content-center ">
+        <%= f.submit 'Submit', class: 'form-button btn btn-primary flex-grow-1 mt-3' %>
+        </div>
+    <% end %>
+</div>
