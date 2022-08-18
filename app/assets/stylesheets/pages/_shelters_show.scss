@@ -1,0 +1,45 @@
+.shelter-container{
+}
+
+.bookings-container{
+  border-left: 1px solid rgba(0,0,0,0.3);
+  margin-left: 16px;
+  padding-left: 16px;
+  position: sticky;
+  top: 0;
+}
+.bookings-column{
+  position:sticky;
+  top:0;
+  height:100vh;
+  overflow:scroll;
+  scrollbar-width: none;
+
+}
+
+.grid-bookings-section{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.scrollbar{
+  overflow-y: scroll;
+  border-radius: 16px;
+  scrollbar-width: none;
+}
+.rounder{
+  border-radius: 16px;
+}
+.new-pet-btn{
+  font-size: 2em;
+  color: #0D6EFD;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.my-pets-head a{
+  color: #0D6EFD;
+  text-decoration: none;
+}

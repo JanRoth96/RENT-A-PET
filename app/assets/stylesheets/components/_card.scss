@@ -18,6 +18,28 @@
   object-position: 50% 50%;
 }
 
+.booking-card{
+margin-bottom: 16px;
+  max-width: 260px;
+}
+.booking-card-form{
+  padding-top: 16px;
+}
+
+.booking-card-btn{
+  min-width: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+.accept{
+  background-color: #1EDD88;
+
+}
+.reject{
+  background-color: #DC3545;
+}
+
 .card-trip {
   overflow: hidden;
   background: white;
@@ -26,19 +48,16 @@
   object-fit: cover;
   object-position: 50% 50%;
 }
-
 .card-trip > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
 }
-
 .card-trip h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
-
 .card-trip p {
   font-size: 12px;
   opacity: .7;
@@ -53,7 +72,6 @@
   align-items: flex-end;
   position: relative;
 }
-
 .card-trip-infos .card-trip-user {
   position: absolute;
   right: 16px;

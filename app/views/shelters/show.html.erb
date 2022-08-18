@@ -1,16 +1,36 @@
-<h1>My Pets</h1>
-<% @shelter.pets.each do |pet| %>
-  <p><%= pet.name %></p>
-<% end %>
+<div class="container shelter-container mt-3 ">
+  <div class="row">
+    <div class="col-9">
+      <div class="pets-container">
+        <div class="my-pets-head d-flex">
+          <h1>My Pets</h1>
+          <%= link_to new_pet_path, class:"new-pet-btn" do%>
+            <i class="fa-solid fa-circle-plus"></i>
+          <%end %>
+        </div>
+          <section class="grid-bookings-section mb-5">
+          <% @shelter.pets.each do |pet| %>
+            <div class="grid-bookings-section-item">
+              <%=render "shared/pet_card", pet: pet%>
+            </div>
+          <% end %>
+        </section>
+      </div>
+    </div>
 
-<h1>My Booking Requests</h1>
-<% @shelter.bookings.each do |booking| %>
-  <p><%= booking.pet.name %></p>
-  <p><%= booking.start_date %></p>
-  <p><%= booking.end_date %></p>
-  <% if booking.status == "pending" %>
-    <p>Approve or Reject?</p>
-  <% end %>
-<% end %>
+    <div class="col-3">
+      <h2 class="d-flex justify-content-center mb-3">Booking Requests</h2>
+      <div class="bookings-container bookings-column">
+        <div class="scrollbar d-flex justify-content-center">
+          <div class="bookings-items">
+            <% @shelter.bookings.each do |booking|%>
+              <%=render "shared/booking_card", booking: booking%>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p><%= link_to "Add Pet", new_pet_path %></p>
+
+</div>
