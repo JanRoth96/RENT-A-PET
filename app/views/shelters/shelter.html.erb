@@ -23,7 +23,16 @@
       <div class="bookings-container bookings-column">
         <div class="scrollbar d-flex justify-content-center">
           <div class="bookings-items">
-            <% @shelter.bookings.each do |booking|%>
+            <p>Pending</p>
+            <% @shelter.bookings.where(status: "pending").each do |booking|%>
+              <%=render "shared/booking_card", booking: booking%>
+            <% end %>
+            <p>Accepted</p>
+            <% @shelter.bookings.where(status: "accepted").each do |booking|%>
+              <%=render "shared/booking_card", booking: booking%>
+            <% end %>
+            <p>Rejected</p>
+            <% @shelter.bookings.where(status: "declined").each do |booking|%>
               <%=render "shared/booking_card", booking: booking%>
             <% end %>
           </div>
@@ -34,4 +43,3 @@
 
 
 </div>
-
