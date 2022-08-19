@@ -13,6 +13,8 @@
         <%= f.button :submit, 'Submit', class: "auth-btn" %>
       </div>
     <% end %>
-    <%= link_to "Back", shelter_path %>
+    <div class="form-actions auth-btn-container">
+    <%= link_to "Back", shelter_path, class: "auth-btn-back d-flex justify-content-center" %>
+    </div>
   </div>
 </div>

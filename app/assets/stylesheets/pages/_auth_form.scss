@@ -15,15 +15,25 @@
 display: flex;
   justify-content: center;
 }
-.auth-btn{
-  background-color: #0D6EFD;
-  color: white;
-  border-radius: 8px;
-  flex-grow: 1;
-}
 .auth-btn-container{
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
   padding-top: 8px;
 }
+.auth-btn{
+  background-color: #0D6EFD;
+  color: white;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+.auth-btn-back{
+  background-color: white;
+  color: #0D6EFD;
+  border: 1px solid #0D6EFD;
+  border-radius: 8px;
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 8px;
+}
+
