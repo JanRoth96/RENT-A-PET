@@ -2,6 +2,8 @@
   background-color: #fff;
   border: none;
   border-radius: 16px;
+  width: 300px;
+  height: 100%;
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
 }
 .pet-card a{
@@ -9,8 +11,10 @@
   color: rgba(0,0,0,0.8);
 }
 .pet-card-image{
-  min-height: 240px;
-  max-height: 240px;
+  // min-height: 240px;
+  // max-height: 240px;
+  width: 100%;
+  height: 240px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   object-fit: cover;
