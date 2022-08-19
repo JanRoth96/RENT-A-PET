@@ -1,6 +1,8 @@
-<h3><%= title %></h3>
-<div class="d-flex w-100 overflow-scroll">
+<h3 class="ps-3"><%= title %></h3>
+<div class="other-collection-slider">
   <% pets.each do |pet| %>
-    <%= render "shared/pet_card", pet: pet, delete: false %>
+    <div class="slider-card">
+      <%= render "shared/pet_card", pet: pet, delete: false %>
+    </div>
   <% end %>
 </div>
