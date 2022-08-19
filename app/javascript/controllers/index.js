@@ -4,5 +4,11 @@
 
 import { application } from "./application"
 
+import FormPriceController from "./form_price_controller"
+application.register("form-price", FormPriceController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import PriceController from "./price_controller"
+application.register("price", PriceController)

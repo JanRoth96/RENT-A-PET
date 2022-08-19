@@ -5,7 +5,7 @@
     <div class="main-photo">
 
 
-        <img src= <%= @pet.photo.attached? ? cl_image_path(@pet.photo.key): "https://source.unsplash.com/featured/?#{@pet.species}&#{rand(10000)}"%> alt="main-photo photo" >
+        <img src = <%= @pet.photo.attached? ? cl_image_path(@pet.photo.key): "https://source.unsplash.com/featured/?#{@pet.species}&#{rand(10000)}"%>"" alt="main-photo photo" >
     </div>
     <div class="sub-photos">
         <img src="https://source.unsplash.com/featured/?<%=@pet.species%>}&#{rand(10000)}" alt="sub-photo photo">
