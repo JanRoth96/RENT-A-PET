@@ -3,9 +3,7 @@
 
   <section class="grid-overview-section mb-5">
     <% @pets.each do |pet| %>
-      <%# <div class="grid-overview-section-item"> %>
         <%=render "shared/pet_card", pet: pet, delete: false%>
-      <%# </div> %>
     <% end %>
   </section>
 </div>
