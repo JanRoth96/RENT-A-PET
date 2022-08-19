@@ -33,7 +33,7 @@
           <section class="grid-pets-section mb-5">
           <% @shelter.pets.each do |pet| %>
             <div class="grid-bookings-section-item">
-              <%=render "shared/pet_card_thinner", pet: pet%>
+              <%=render "shared/pet_card_thinner", pet: pet, delete: true%>
             </div>
           <% end %>
         </section>
