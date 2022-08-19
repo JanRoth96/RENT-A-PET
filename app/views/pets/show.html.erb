@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="mt-3 mb-3"><%= @pet.name %></h1>
+  <h1 class="mt-3 mb-3 ps-3"><%= @pet.name %></h1>
   <div class="photos">
     <div class="main-photo">
       <img src= "<%= @pet.photo.attached? ? cl_image_path(@pet.photo.key): "https://source.unsplash.com/featured/?#{@pet.species}&#{rand(10000)}"%>" alt="main-photo photo" >
