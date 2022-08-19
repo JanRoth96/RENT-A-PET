@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.browse-pets-btn{
+  background-color: #60463B;
+  color: white;
+  transition: 300ms;
+  border: 1px solid #60463B;
+  padding: 20px;
+  border-radius: 16px;
+  width: 400px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+}
+.browse-pets-btn:hover{
+  background-color: transparent;
+  color: #60463B;
+  border: 1px solid #60463B;
+}
+.browse-pets-btn-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
