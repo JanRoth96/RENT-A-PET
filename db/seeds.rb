@@ -90,103 +90,103 @@ horse_5 = Pet.new(name: "Lady", species: "Horse", gender: "female", age: 7, avai
 horse_5.save!
 
 
-url = "https://source.unsplash.com/random/?whale";
+url = "https://source.unsplash.com/random/?whale&#{rand(1000)}";
 file = URI.open(url)
 whale_1.photo.attach(io: file, filename: "whale.png", content_type: "image/png")
 whale_1.save!
 
-url = "https://source.unsplash.com/random/?whale";
+url = "https://source.unsplash.com/random/?whale&#{rand(1000)}";
 file = URI.open(url)
 whale_2.photo.attach(io: file, filename: "whale.png", content_type: "image/png")
 whale_2.save!
 
-url = "https://source.unsplash.com/random/?whale";
+url = "https://source.unsplash.com/random/?whale&#{rand(1000)}";
 file = URI.open(url)
 whale_3.photo.attach(io: file, filename: "whale.png", content_type: "image/png")
 whale_3.save!
 
-url = "https://source.unsplash.com/random/?whale";
+url = "https://source.unsplash.com/random/?whale&#{rand(1000)}";
 file = URI.open(url)
 whale_4.photo.attach(io: file, filename: "whale.png", content_type: "image/png")
 whale_4.save!
 
-url = "https://source.unsplash.com/random/?whale";
+url = "https://source.unsplash.com/random/?whale&#{rand(1000)}";
 file = URI.open(url)
 whale_5.photo.attach(io: file, filename: "whale.png", content_type: "image/png")
 whale_5.save!
 
-url = "https://source.unsplash.com/random/?dog";
+url = "https://source.unsplash.com/random/?dog&#{rand(1000)}";
 file = URI.open(url)
 dog_1.photo.attach(io: file, filename: "dog.png", content_type: "image/png")
 dog_1.save!
 
-url = "https://source.unsplash.com/random/?dog";
+url = "https://source.unsplash.com/random/?dog&#{rand(1000)}";
 file = URI.open(url)
 dog_2.photo.attach(io: file, filename: "dog.png", content_type: "image/png")
 dog_2.save!
 
-url = "https://source.unsplash.com/random/?dog";
+url = "https://source.unsplash.com/random/?dog&#{rand(1000)}";
 file = URI.open(url)
 dog_3.photo.attach(io: file, filename: "dog.png", content_type: "image/png")
 dog_3.save!
 
-url = "https://source.unsplash.com/random/?dog";
+url = "https://source.unsplash.com/random/?dog&#{rand(1000)}";
 file = URI.open(url)
 dog_4.photo.attach(io: file, filename: "dog.png", content_type: "image/png")
 dog_4.save!
 
-url = "https://source.unsplash.com/random/?dog";
+url = "https://source.unsplash.com/random/?dog&#{rand(1000)}";
 file = URI.open(url)
 dog_5.photo.attach(io: file, filename: "dog.png", content_type: "image/png")
 dog_5.save!
 
 
-url = "https://source.unsplash.com/random/?cat";
+url = "https://source.unsplash.com/random/?cat&#{rand(1000)}";
 file = URI.open(url)
 cat_1.photo.attach(io: file, filename: "cat.png", content_type: "image/png")
 cat_1.save!
 
-url = "https://source.unsplash.com/random/?cat";
+url = "https://source.unsplash.com/random/?cat&#{rand(1000)}";
 file = URI.open(url)
 cat_2.photo.attach(io: file, filename: "cat.png", content_type: "image/png")
 dog_2.save!
 
-url = "https://source.unsplash.com/random/?cat";
+url = "https://source.unsplash.com/random/?cat&#{rand(1000)}";
 file = URI.open(url)
 cat_3.photo.attach(io: file, filename: "cat.png", content_type: "image/png")
 cat_3.save!
 
-url = "https://source.unsplash.com/random/?cat";
+url = "https://source.unsplash.com/random/?cat&#{rand(1000)}";
 file = URI.open(url)
 cat_4.photo.attach(io: file, filename: "cat.png", content_type: "image/png")
 cat_4.save!
 
-url = "https://source.unsplash.com/random/?cat";
+url = "https://source.unsplash.com/random/?cat&#{rand(1000)}";
 file = URI.open(url)
 cat_5.photo.attach(io: file, filename: "cat.png", content_type: "image/png")
 cat_5.save!
 
-url = "https://source.unsplash.com/random/?horse";
+url = "https://source.unsplash.com/random/?horse&#{rand(1000)}";
 file = URI.open(url)
 horse_1.photo.attach(io: file, filename: "horse.png", content_type: "image/png")
 horse_1.save!
 
-url = "https://source.unsplash.com/random/?horse";
+url = "https://source.unsplash.com/random/?horse&#{rand(1000)}";
 file = URI.open(url)
 horse_2.photo.attach(io: file, filename: "horse.png", content_type: "image/png")
 dog_2.save!
 
-url = "https://source.unsplash.com/random/?horse";
+url = "https://source.unsplash.com/random/?horse&#{rand(1000)}";
 file = URI.open(url)
 horse_3.photo.attach(io: file, filename: "horse.png", content_type: "image/png")
 horse_3.save!
 
-url = "https://source.unsplash.com/random/?horse";
+url = "https://source.unsplash.com/random/?horse&#{rand(1000)}";
 file = URI.open(url)
 horse_4.photo.attach(io: file, filename: "horse.png", content_type: "image/png")
 horse_4.save!
 
-url = "https://source.unsplash.com/random/?horse";
+url = "https://source.unsplash.com/random/?horse&#{rand(1000)}";
 file = URI.open(url)
 horse_5.photo.attach(io: file, filename: "horse.png", content_type: "image/png")
 horse_5.save!
