@@ -2,12 +2,19 @@
   margin-left: 0;
   width: 100vw;
   padding: 16px;
-  background: rgba(0,0,0,0.7);
+  background: #523b32;
   color: white;
   box-shadow:  0 0 24px rgba(0,0,0,0.35);
-  height: 20vh;
+  height: 22vh;
+  position: relative;
 }
-
+.footer-info{
+  line-height: 12px;
+  font-size: 14px;
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -15,4 +22,8 @@
 
 .content-vh{
   min-height: 100vh;
+}
+
+.footer-credit{
+  padding-top: 13vh;
 }
