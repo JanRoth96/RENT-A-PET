@@ -32,16 +32,20 @@
 }
 .search-wrap{
   position: relative;
-
 }
 .navbar-search-container{
   width: 100%;
 }
 .container-gap{
-  gap: 10%;
+  gap: 14%;
 }
 .form-control:focus {
   box-shadow: none;
   border: 1px solid rgba(0,0,0,0.3);
 }
 
+.avatar-container{
+  width: 820px;
+  display: flex;
+  justify-content: end;
+}
