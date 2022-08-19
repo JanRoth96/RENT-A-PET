@@ -10,6 +10,4 @@ class Booking < ApplicationRecord
     rejected: "rejected",
     pending: "pending"
   }
-
-
 end

@@ -13,7 +13,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
     authorize @pet
     @booking = Booking.new
-    @pets = Pet.all.limit(8)
+    @pets = Pet.where(species: @pet.species).limit(4)
   end
 
   def new
