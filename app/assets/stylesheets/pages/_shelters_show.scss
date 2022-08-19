@@ -44,6 +44,10 @@
   color: #60463B;
   display: flex;
   align-items: center;
+  transition: 300ms;
+}
+.new-pet-btn:hover{
+  transform: rotate(90deg);
 }
 .my-pets-head a{
   color: #60463B;

@@ -5,14 +5,18 @@
   width: 300px;
   height: 100%;
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 300ms;
+}
+.pet-card:hover{
+  border-radius: 2px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.3);
 }
 .pet-card a{
   text-decoration: none;
   color: rgba(0,0,0,0.8);
 }
 .pet-card-image{
-  // min-height: 240px;
-  // max-height: 240px;
   width: 100%;
   height: 240px;
   border-top-left-radius: 16px;
@@ -37,11 +41,23 @@ margin-bottom: 16px;
 .accept{
   background-color: #60463B;
   color: white;
+  transition: 300ms;
+  border: 1px solid #60463B;
+}
+.accept:hover{
+  background-color: transparent;
+  color: #60463B;
+  border: 1px solid #60463B;
 }
 .reject{
   color: #60463B;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid #60463B;
+  transition: 300ms;
+}
+.reject:hover{
+  color: white;
+  background-color: #60463B;
 }
 .reservation-card{
   max-width: 300px;

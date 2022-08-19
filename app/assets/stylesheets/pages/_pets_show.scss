@@ -38,13 +38,19 @@ $px:80px;
 .pet-info ul{
   list-style-type: none;
   font-weight: bold;
+  cursor: default;
 }
 .pet-info li{
-  padding: 8px;
-  background-color: lightgray;
-  border-radius: 4px;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.25);
+  border-radius: 5px;
+  color: rgba(0,0,0,0.85);
+  transition: 300ms;
 }
-
+.pet-info li:hover{
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
 .pet-description{
   font-size: 1.2em;
   max-width: 720px;
