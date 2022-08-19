@@ -1,5 +1,9 @@
 <div class="booking-card pet-card reservation-card" style="width: 20rem;">
-  <img class="card-img-top pet-card-image" src="https://source.unsplash.com/featured/?<%=booking.pet.species%>}&#{rand(10000)}" alt="Card image cap">
+    <% if booking.pet.photo.attached? %>
+  <%= cl_image_tag booking.pet.photo.key, width: 300, height: 200, class: "pet-card-image"%>
+  <% else %>
+  <img src="https://source.unsplash.com/featured/?#{pet.species}&#{rand(10000)}" alt="main-photo photo" class="pet-card-image" >
+  <% end %>
   <div class="card-body px-3">
     <h3 class="card-title my-3"><%= booking.pet.name %></h3>
     <p class="card-text">Status: <%= booking.status %></p>
