@@ -49,4 +49,4 @@ pet_5 = Pet.new(name: "Noir", species: "Horse", gender: "male", age: 1, availabi
 pet_5.save!
 
 
-Booking.create!(pet: pet_1, user: user_1, start_date: Date.new-2, end_date: Date.new)
+# Booking.create!(pet: pet_1, user: user_1, start_date: Date.new-2, end_date: Date.new)
