@@ -3,7 +3,11 @@ class PetsController < ApplicationController
 
   def index
     if params[:query].present?
-      @pets = policy_scope(Pet).where("species ILIKE ?", "%#{params[:query]}%")
+      sql_query = <<~SQL
+      species ILIKE :query
+      OR location ILIKE :query
+      SQL
+      @pets = policy_scope(Pet).joins(:shelter).where(sql_query, query: "%#{params[:query]}%")
     else
       @pets = policy_scope(Pet)
     end
