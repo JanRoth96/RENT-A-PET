@@ -9,7 +9,15 @@
     <h3 class="card-title"><%= pet.name %> (<%= pet.species %>)</h3>
     <p class="card-text">Location: <%= pet.shelter.location %></p>
     <p class="card-text">Price: <%= pet.price %>$</p>
-    <%= link_to "Delete", pet_path(pet), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} if delete && current_user.shelter == pet.shelter%>
+    <%#= link_to "Delete", pet_path(pet), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} if delete && current_user.shelter == pet.shelter%>
+    <div class="delete-btn">
+      <% if delete && current_user.shelter == pet.shelter %>
+        <%= link_to pet_path(pet),
+                    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do%>
+          <i class="fa-solid fa-circle-xmark p-1"></i>
+        <%end %>
+      <%end %>
+    </div>
   </div>
   <%end %>
 </div>

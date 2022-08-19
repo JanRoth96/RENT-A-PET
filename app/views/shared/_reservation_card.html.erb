@@ -30,6 +30,12 @@
         <% end %>
       </div>
     <% end %>
-  <%= link_to "Delete", booking_path(booking), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+    <div class="delete-btn">
+       <%= link_to booking_path(booking),
+                   data: {turbo_method: :delete,
+                          turbo_confirm: "Are you sure?"} do%>
+         <i class="fa-solid fa-circle-xmark p-1"></i>
+       <%end %>
+    </div>
   </div>
 </div>
