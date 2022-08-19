@@ -1,18 +1,29 @@
 <div class="container-fluid m-0 p-0">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/?pet);">
-    <div class="container">
-      <h1>Rent a Pet!</h1>
-      <p>Change your life! Rent a pet</p>
-      <%= link_to "Browse Pets", pets_path, class: "btn btn-primary" %>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://www.westend61.de/images/0001493985pw/happy-man-smiling-while-playing-with-pet-lying-on-sofa-at-home-EBBF01796.jpg);">
+    <div class="banner-head">
+      <h1>RENT A PET</h1>
     </div>
+
   </div>
 </div>
 <div class="container">
-  <div class="text-center p-5 mt-3">
-    <p>Want a pet but unsure about owning one? Try RENTApet! Browse through our selection of pets and choose the right pet for you!</p>
+
+  <div class="text-center my-5">
+    <h2>Want a pet but unsure about owning one?</h2>
+  </div>
+
+  <div class="text-center  my-5">
+      <h2 class=""> Try Rent a Pet!</h2>
+      <h3 class="my-5">Browse through our selection of pets and choose the right pet for you!</h3>
+  </div>
+
+  <div class="browse-pets-btn-container my-5">
+    <%=link_to pets_path, class: 'browse-pets-btn'  do%>
+      <h2>Browse Pets</h2>
+    <%end %>
   </div>
 </div>
-<div class="container mt-3 mb-3">
+<div class="container mt-5 mb-3">
   <div class="cards">
     <div class="card-trip">
       <img src="https://source.unsplash.com/random/?dog" />
