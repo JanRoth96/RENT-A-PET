@@ -3,6 +3,12 @@
   border: none;
   border-radius: 16px;
   box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 300ms;
+}
+.pet-card:hover{
+  border-radius: 2px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.3);
 }
 .pet-card a{
   text-decoration: none;
@@ -11,8 +17,6 @@
 .pet-card-image{
   min-height: 240px;
   max-height: 240px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
   object-fit: cover;
   object-position: 50% 50%;
 }
