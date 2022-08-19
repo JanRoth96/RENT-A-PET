@@ -22,7 +22,8 @@
 }
 
 .booking-card{
-margin-bottom: 16px;
+  margin-bottom: 16px;
+  position: relative;
 }
 .booking-card-form{
   padding-top: 16px;
@@ -58,8 +59,23 @@ margin-bottom: 16px;
 .reservation-card{
   max-width: 300px;
   padding-bottom: 16px;
+  position: relative;
 }
 
+.delete-btn{
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 32px;
+  opacity: 70%;
+  transition: 300ms;
+}
+.delete-btn:hover {
+  opacity: 100%;
+}
+.delete-btn a{
+  color: #60463B;
+}
 .card-thinner{
   max-width: 260px;
 }
