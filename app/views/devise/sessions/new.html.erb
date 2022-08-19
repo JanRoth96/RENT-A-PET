@@ -20,7 +20,8 @@
         <%= f.button :submit, "Log in", class:"auth-btn" %>
       </div>
     <% end %>
-
-    <%= render "devise/shared/links" %>
+    <div class="auth-btn-container">
+      <%= link_to "Sign up", new_registration_path(resource_name), class:"auth-btn-back"%>
+    </div>
   </div>
 </div>
