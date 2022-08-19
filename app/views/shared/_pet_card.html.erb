@@ -3,7 +3,7 @@
     <% if pet.photo.attached? %>
       <%= cl_image_tag pet.photo.key, width: 300, height: 200, class: "pet-card-image"%>
     <% else %>
-      <img src="https://source.unsplash.com/featured/?#{pet.species}&#{rand(10000)}" alt="main-photo photo" class="pet-card-image" >
+      <img src='https://source.unsplash.com/featured/?<%=pet.species%>&#{rand(10000)}' alt="main-photo photo" class="pet-card-image" >
     <% end %>
     <div class="card-body px-3">
       <h3 class="card-title"><%= pet.name %> (<%= pet.species %>)</h3>
