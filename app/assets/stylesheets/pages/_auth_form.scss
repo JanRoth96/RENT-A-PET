@@ -18,20 +18,24 @@ display: flex;
 .auth-btn-container{
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   padding-top: 8px;
 }
 .auth-btn{
-  background-color: #0D6EFD;
+  background-color: #60463B;
   color: white;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
 }
 .auth-btn-back{
   background-color: white;
-  color: #0D6EFD;
-  border: 1px solid #0D6EFD;
+  color: #60463B;
+  border: 1px solid #60463B;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
   text-decoration: none;
   padding: 8px;
