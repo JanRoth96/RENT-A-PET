@@ -33,11 +33,23 @@ margin-bottom: 16px;
 .accept{
   background-color: #60463B;
   color: white;
+  transition: 300ms;
+  border: 1px solid #60463B;
+}
+.accept:hover{
+  background-color: transparent;
+  color: #60463B;
+  border: 1px solid #60463B;
 }
 .reject{
   color: #60463B;
-  background-color: white;
+  background-color: transparent;
   border: 1px solid #60463B;
+  transition: 300ms;
+}
+.reject:hover{
+  color: white;
+  background-color: #60463B;
 }
 .reservation-card{
   max-width: 300px;
